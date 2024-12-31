@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Метаданни за страницата -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Респонсивен дизайн -->
+  <meta name="description" content="Контакт с нас"> <!-- Описание за търсачките -->
+  <meta name="keywords" content="контакти, форма за връзка, онлайн безопасност"> <!-- Ключови думи -->
+  <meta name="author" content="EL Tai Yahia"> <!-- Автор на сайта -->
+  <title>Кибертормоз | Контакти</title> <!-- Заглавие на страницата -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Свързване с CSS файла -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon"> <!-- Икона на сайта -->
+</head>
+<body>
+  <!-- Хедър (горната част на страницата с навигация) -->
+  <header>
+    <div class="container">
+      <!-- Логото и заглавието на сайта -->
+      <h1><span id="acme">Онлайн</span> Сигурност</h1>
+      
+      <!-- Навигационно меню -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="cyberbulling.html">Кибертормоз</a></li>
+          <li><a href="onlinesafety.html">Сигурност</a></li>
+          <li><a href="statistics.html">Статистика</a></li>
+          <li><a href="resources.html">Ресурси</a></li>
+          <li class="current"><a href="contact.html">Контакти</a></li> <!-- Активна страница -->
+          
+          <!-- Бутон за смяна на темата -->
+          <button style="max-width: fit-content;" id="toggle-theme">🌞</button>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Секция за бюлетин (абонамент) -->
+  <aside class="newsletter">
+    <div class="container">
+      <p>Абонирайте се за нашия бюлетин</p>
+      
+      <!-- Форма за абонамент -->
+      <form>
+        <input for="email" type="email" placeholder="Въведете имейл"> <!-- Поле за имейл -->
+        <button type="submit" id="email">Абонирай се</button> <!-- Бутон за абонамент -->
+      </form>
+    </div>
+  </aside>
+
+  <!-- Главна секция с контактната форма и информация за контакт -->
+  <section id="main-col">
+    <div class="container">
+      
+      <!-- Контактна форма -->
+      <article class="contact">
+        <h2>Контакти</h2>
+        <p>Ако имате въпроси или искате да се свържете с нас, попълнете формата по-долу. Ние ще се свържем с вас възможно най-скоро.</p>
+        
+        <!-- Форма за контакт -->
+        <form action="#" method="post" id="contact-form">
+          
+          <!-- Име -->
+          <label for="name">Име:</label><br>
+          <input type="text" id="name" name="name" placeholder="Вашето име"><br><br>
+
+          <!-- Имейл -->
+          <label for="contact-email">Имейл:</label><br>
+          <input type="email" id="contact-email" name="email" placeholder="Вашият имейл"><br><br>
+
+          <!-- Тема -->
+          <label for="subject">Тема:</label><br>
+          <input type="text" id="subject" name="subject" placeholder="Тема на съобщението"><br><br>
+
+          <!-- Съобщение -->
+          <label for="message">Съобщение:</label><br>
+          <textarea id="message" name="message" rows="5" placeholder="Вашето съобщение"></textarea><br><br>
+
+          <!-- Бутон за изпращане на съобщението -->
+          <button type="submit" id="submit-button">Изпрати</button>
+        </form>
+      </article>
+
+      <!-- Информация за контакт -->
+      <aside id="contact-info">
+        <h3>Информация за контакт</h3>
+        <p><strong>Телефон:</strong> +359 123 456 789</p>
+        <p><strong>Имейл:</strong> support@cyberbully.bg</p>
+        <p><strong>Адрес:</strong> София, бул. Витоша 15</p>
+      </aside>
+    </div>
+  </section>
+
+  <div style="clear:both"></div>
+
+  <!-- Футър (долна част на страницата) -->
+  <footer>
+    <p>Онлайн сигурност, Авторски права &copy; 2024</p>
+  </footer>
+
+  <!-- Свързване със скриптове -->
+  <script src="js/script.js"></script>
+</body>
+</html>

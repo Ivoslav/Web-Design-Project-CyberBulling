@@ -1,0 +1,438 @@
+/*=====Global Style=====*/
+
+/* Задаваме основни нулиращи стойности за всички елементи */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Стил за html и body, за да заемат цялата височина на екрана */
+html, body {
+  height: 100%; /* Заема цялата височина на екрана */
+  margin: 0;
+  display: flex; /* Използваме flexbox за вертикално подравняване */
+  flex-direction: column; /* Разположение на елементите вертикално */
+}
+
+/* Контейнер, който съдържа основния съдържание на страницата */
+.container {
+  width: 80%; /* Ширина 80% от екранната ширина */
+  margin: auto; /* Центрираме контейнера */
+  overflow: hidden; /* Предотвратяваме излизането на елементи извън контейнера */
+  flex: 1; /* Контейнерът заема наличното пространство */
+}
+
+/* Стил за линковете */
+a {
+  color: #e8491d; /* Основен цвят на линковете */
+}
+
+/*=====Header Style=====*/
+
+/* Стил за хедъра (горната част на сайта) */
+header {
+  margin: 0;
+  padding: 32px 0px; /* Отстояния на хедъра */
+  color: #ffffff;
+  background-color: #35424a; /* Тъмен фон */
+  border-bottom: #e8491d 3px solid; /* Тънка червена линия под хедъра */
+}
+
+/* Специален стил за елемента с ID "acme" */
+#acme {
+  color: #e8491d;
+}
+
+/* Стил за h1 в хедъра */
+header h1 {
+  float: left; /* Избутваме надписа вляво */
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Стил за навигационната част на хедъра */
+header nav {
+  float: right; /* Избутваме навигацията вдясно */
+  padding-top: 10px; /* Отстояние отгоре */
+}
+
+/* Стил за елементите на списъка (navbar) */
+li {
+  display: inline; /* Линковете ще са в редица */
+  padding-right: 25px; /* Отстояние между елементите */
+}
+
+/* Стил за линковете в навигационния списък */
+li a {
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none; /* Премахваме подчертаването */
+}
+
+/* Стил за активните линкове (текущата страница) */
+.current a {
+  color: #e8491d; /* Променяме цвета на активния линк */
+}
+
+/* Стил за линковете при задържане с курсора */
+a:hover {
+  color: #e8491d; /* Променяме цвета на линка при hover */
+}
+
+/*=====ShowCase Area Style=====*/
+
+/* Стил за "showcase" (първата част на страницата с фон) */
+.showcase {
+  text-align: center; /* Центрираме текста */
+  color: #ffffff;
+  height: 400px;
+  background-image: url(../images/showcase.jpg); /* Фонова снимка */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Фонът покрива целия контейнер */
+}
+
+/* Стил за h1 в "showcase" */
+.showcase h1 {
+  padding: 60px 0 20px 0;
+  font-size: 60px;
+}
+
+/* Стил за параграфите в "showcase" */
+.showcase p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*=====Newsletter Area Style=====*/
+
+/* Стил за секцията с форма за абонамент */
+.newsletter {
+  padding: 32px 0;
+  background: #35424a; /* Тъмен фон */
+  color: #ffffff;
+}
+
+/* Стил за параграфите в секцията с форма за абонамент */
+.newsletter p {
+  font-weight: bold;
+  font-size: 25px;
+  float: left;
+  width: 65%; /* Ширина на параграфа */
+}
+
+/* Стил за полето за текст във формата */
+input {
+  width: 250px;
+  border: 0;
+  padding: 10px 0px;
+}
+
+/* Стил за бутона във формата */
+button {
+  border: 0;
+  padding: 10px;
+  color: #ffffff;
+  background: #e8491d; /* Червен фон на бутона */
+}
+
+/* Стил за секцията с "boxes" */
+.boxes {
+  background: #f4f4f4;
+}
+
+/* Стил за отделните "box" в секцията */
+.box {
+  height: 300px;
+  width: 30%;
+  float: left; /* Разположение в редица */
+  text-align: center;
+}
+
+/* Стил за изображенията вътре в кутията */
+.box img {
+  padding: 20px 0;
+}
+
+/* Стил за заглавията в кутията */
+.box h3 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* Стил за параграфите вътре в кутията */
+.box p {
+  padding: 10px 10px;
+}
+
+/* Основен стил за главната колона */
+#main-col {
+  background: #f4f4f4;
+}
+
+/*=====About Page Style=====*/
+
+/* Стил за таблици */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Обединяваме границите на клетките */
+  margin: 20px 0;
+}
+
+/* Стил за таблицата - клетки и заглавия */
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Стил за заглавията на таблицата */
+table th {
+  background-color: #e8491d; /* Червен фон */
+  color: white;
+}
+
+/* Стил за редовете на таблицата */
+table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Сив фон за четни редове */
+}
+
+/* Стил за редовете на таблицата при hover */
+table tr:hover {
+  background-color: #ddd; /* По-светъл фон при hover */
+}
+
+/* Стил за "about" секцията */
+.about {
+  float: left;
+  width: 65%;
+  padding: 20px 0px;
+}
+
+/* Стил за заглавията в "about" секцията */
+.about h2 {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+/* Стил за параграфите в "about" */
+.about p {
+  font-size: 17px;
+  padding: 10px 0px;
+  line-height: 23px;
+}
+
+/* Стил за секцията "what we do" */
+#whatwedo {
+  margin-top: 15px;
+  padding: 25px 10px;
+  float: right;
+  width: 30%;
+  color: #ffffff;
+  background-color: #35424a;
+}
+
+/* Стил за заглавията в "what we do" */
+#whatwedo h3 {
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+/* Стил за параграфите в "what we do" */
+#whatwedo p {
+  line-height: 23px;
+  font-size: 17px;
+  padding: 10px 10px;
+}
+
+/* Стил за инпут полетата в "what we do" */
+#whatwedo input {
+  width: 300px;
+  margin: 5px 0px;
+}
+
+/* Стил за бутона в "what we do" */
+#button {
+  width: 70px;
+  margin-top: 10px;
+}
+
+/* Стил за секцията с услуги */
+.services {
+  float: left;
+  width: 65%;
+  padding: 20px 0px;
+}
+
+/* Стил за заглавията в "services" секцията */
+.services h2 {
+  font-size: 21px;
+  padding: 10px 0px;
+}
+
+/* Стил за списъците с услуги */
+.serv-list {
+  margin-bottom: 5px;
+  background: #e6e6e6;
+  padding: 20px;
+  border: 1px solid darkgray;
+}
+
+/* Стил за заглавията на услугите */
+.serv-list h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+
+/* Стил за параграфите в списъка с услуги */
+.serv-list p {
+  font-size: 17px;
+  padding: 7px 0px;
+  line-height: 24px;
+}
+
+/*=====Footer Style=====*/
+
+/* Стил за футъра (долната част на страницата) */
+footer {
+  padding: 23px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #e8491d; /* Червен фон */
+  color: #ffffff;
+  flex-shrink: 0; /* Гарантира, че футърът няма да се свива */
+}
+
+/*=====Media Queries=====*/
+
+/* Стил за мобилни устройства (със ширина под 768px) */
+@media(max-width: 768px) {
+  header h1, nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  li {
+    padding-right: 10px;
+  }
+
+  .showcase h1 {
+    padding: 60px 0 20px 0;
+    font-size: 35px;
+  }
+
+  .showcase p {
+    padding: 10px;
+  }
+
+  .newsletter p {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+    float: none;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .box {
+    height: 300px;
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .about {
+    float: none;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 16px;
+    padding: 10px 10px;
+    line-height: 20px;
+  }
+
+  #whatwedo {
+    text-align: center;
+    margin-top: 15px;
+    padding: 25px 5px;
+    float: none;
+    width: 100%;
+  }
+
+  #whatwedo input {
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  #button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .services {
+    text-align: center;
+    float: none;
+    width: 100%;
+    padding: 20px 0px;
+  }
+}
+
+/*=====Тъмна тема=====*/
+.dark-mode {
+  background-color: #121212; /* Тъмен фон за тъмна тема */
+  color: #ffffff;
+}
+
+.dark-mode .boxes {
+  background-color: #222222;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode button {
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+.dark-mode a {
+  color: #4a90e2; /* Цветът на линковете в тъмна тема */
+}
+
+.dark-mode .container,
+.dark-mode .container * {
+  color: #ffffff;
+}
+
+.dark-mode .newsletter input {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .box {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.dark-mode .current a {
+  color: #e8491d;
+}
